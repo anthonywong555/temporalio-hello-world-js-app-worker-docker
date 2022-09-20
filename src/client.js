@@ -3,6 +3,7 @@ import { example } from './workflows.js';
 import 'dotenv/config';
 
 async function run() {
+  console.log(`=== ${process.env.TEMPORAL_CLUSTER_HOST}:7233 ===`);
   const connection = await Connection.connect({
     // // Connect to localhost with default ConnectionOptions.
     // // In production, pass options to the Connection constructor to configure TLS and other settings:
