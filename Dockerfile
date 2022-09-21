@@ -5,4 +5,4 @@ WORKDIR /app
 
 RUN npm install --only=production
 
-CMD ["npm" "run" "start.watch"]
+CMD [ "npm" "run" "start.watch" ]
